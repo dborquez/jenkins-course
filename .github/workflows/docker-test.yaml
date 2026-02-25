@@ -17,7 +17,7 @@ jobs:
       - name: Login a Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_USERNAME_ERROR }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # 3. Construye la imagen y súbela (Push)
